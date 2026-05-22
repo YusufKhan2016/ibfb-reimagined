@@ -1,8 +1,10 @@
 <script setup>
+import HeroBanner from '@/components/sections/heroBanner.vue';
+
 </script>
 
 <template>
-  <Section class="text-8xl font-bold">
-    hello
-  </Section>
+    <section class="text-8xl">
+        <HeroBanner />
+    </section>
 </template>
