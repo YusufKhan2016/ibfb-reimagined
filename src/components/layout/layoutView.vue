@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Footer from './footer.vue'
-import Header from './header.vue'
+import Navbar from './navbar.vue'
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import Header from './header.vue'
     </div>
 
     <div class="relative z-10">
-      <Header />
+      <Navbar />
 
       <div class="bg-[#0B1050] sticky z-999 top-0 border-b border-b-solid border-white">
         <ul class="flex justify-between container mx-auto px-10 py-1 text-white">
