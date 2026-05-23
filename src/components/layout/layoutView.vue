@@ -7,20 +7,20 @@ import Header from './header.vue';
 <template>
     <Header/>
 
-    <div class="bg-[#0B1050] sticky top-0 border-b border-b-solid border-white">
+    <div class="bg-[#0B1050] sticky z-999 top-0 border-b border-b-solid border-white">
         <ul class="flex justify-between container mx-auto px-10 py-1 text-white ">
             
-            <li>Home</li>
-            <li>About IBFB</li> 
-            <li>What we do</li>
-            <li>Membership</li>
-            <li>News & Events</li>
-            <li>Resources</li>
-            <li>Gallery</li>
-            <li>Archive</li>
-            <li>Bangladesh</li>
-            <li>Career</li>
-            <li>Contact us</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Home</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">About IBFB</li> 
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">What we do</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Membership</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">News & Events</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Resources</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Gallery</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Archive</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Bangladesh</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Career</li>
+            <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Contact us</li>
             
         </ul>
     </div>

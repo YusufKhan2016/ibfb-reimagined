@@ -1,6 +1,6 @@
 <script setup>
 import { LifeBuoy, Search } from '@lucide/vue';
-import { watch } from 'vue';
+import Button from '@/components/ui/button.vue';
 
 </script>
 
@@ -16,10 +16,10 @@ import { watch } from 'vue';
                 <div class="flex gap-4 items-center">
                     <search />
 
-                    <button class="bg-[#0B1050] hover:bg-white hover:border hover:border-solid hover:border-[#0B1050] py-1 px-2 hover:text-[#0B1050] text-white flex items-center transition-all gap-1">
+                    <Button>
                         <life-buoy size="14" />
                         Support IBFB
-                    </button>
+                    </Button>
                 </div>
             </div>
         </div>
