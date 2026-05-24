@@ -1,6 +1,7 @@
 <script setup>
 import AboutUs from '@/components/sections/aboutUs.vue';
 import HeroBanner from '@/components/sections/heroBanner.vue';
+import PresidentsMessage from '@/components/sections/presidentsMessage.vue';
 
 </script>
 
@@ -8,5 +9,5 @@ import HeroBanner from '@/components/sections/heroBanner.vue';
     
     <HeroBanner />
     <AboutUs />
-    
+    <PresidentsMessage />
 </template>
