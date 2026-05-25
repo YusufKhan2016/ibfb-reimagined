@@ -5,6 +5,7 @@ import Button from '../ui/button.vue'
 import Header from '../ui/header.vue';
 
 const messageText = ref(null)
+const presidentImageWrapper = ref(null);
 const presidentImage = ref(null);
 const sectionWrapper = ref(null);
 
@@ -15,7 +16,7 @@ onMounted(() => {
 
   let split = SplitText.create(messageText.value, { type: "words" });
   let tl = gsap.timeline({
-    ScrollTrigger: {
+    scrollTrigger: {
       trigger: sectionWrapper.value,
         start: 'top 70%',
         toggleActions: 'play pause resume reset'
@@ -28,10 +29,13 @@ onMounted(() => {
     ease: 'power3.out',
     duration: 0.5,
   })
+    .from(presidentImageWrapper.value, {
+      width: '0px',
+      duration: 0.3,
+    }, "-=1.4")
     .from(presidentImage.value, {
-    minWidth: '200px',
-    duration: 2,
-  })
+      filter: "blur(20px)",
+    }, "-=1.4")
   
 })  
 
@@ -51,10 +55,10 @@ onMounted(() => {
           second-part="Message"
         />
 
-        <div class="flex justify-between items-center gap-40 mt-12">
+        <div class="flex justify-between items-center mt-12">
           <div 
             ref="messageText" 
-            class="space-y-6"
+            class="space-y-6 w-3xl"
           >
             <div class="text-lg text-black leading-relaxed">
               
@@ -74,13 +78,14 @@ onMounted(() => {
           </div>
 
           <div 
-            ref="presidentImage"
-            class="relative overflow-hidden min-w-75"
+            ref="presidentImageWrapper"
+            class="relative overflow-hidden w-75 h-90"
           >
             <img 
+              ref="presidentImage"
               src="@/assets/presidentMessage/president.jpg" 
               alt=""
-              class="h-full w-full bg-cover"
+              class="h-full w-full object-cover"
             >
           </div>
         </div>
