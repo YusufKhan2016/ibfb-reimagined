@@ -22,13 +22,15 @@ onMounted(() => {
   tl.from(screenWrapperLeft.value, {
     x: '0%',
     duration: 1,
-    ease: 'power4.in'
+    ease: 'power4.in',
+    delay: 1.2
   })
 
   tl.from(screenWrapperRight.value, {
     x: '0%',
     duration: 1,
-    ease: 'power4.in'
+    ease: 'power4.in',
+    delay: 1.2
   }, 0)
 
 })
