@@ -60,7 +60,7 @@ onMounted(() => {
           
           <div 
             ref="messageText" 
-            class="space-y-6 w-3xl bg-white border border-solid border-black/10 p-4"
+            class="space-y-6 w-3xl 2xl:w-5xl bg-white border border-solid border-black/10 p-4"
           >
             <div class="text-lg text-black leading-relaxed">
               
@@ -81,7 +81,7 @@ onMounted(() => {
 
           <div 
             ref="presidentImageWrapper"
-            class="relative overflow-hidden w-75 h-90"
+            class="relative overflow-hidden w-90 h-[416px] 2xl:h-[430px]"
           >
             <img 
               ref="presidentImage"
