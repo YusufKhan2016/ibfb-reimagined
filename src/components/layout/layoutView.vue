@@ -1,10 +1,49 @@
-<script setup lang="ts">
+<script setup>
+import { onMounted, ref } from 'vue';
 import Footer from './footer.vue'
 import Navbar from './navbar.vue'
+import gsap from 'gsap/all';
+
+const screenWrapperLeft = ref(null);
+const screenWrapperRight = ref(null);
+
+onMounted(() => {
+  gsap.from(screenWrapperLeft.value,
+  {
+    translateX: "-0",
+    duration: 0.8,
+    ease: "power2.in",
+    delay: 1
+  })
+  gsap.from(screenWrapperRight.value,
+  {
+    translateX: "0",
+    duration: 0.8,
+    ease: "power2.in",
+    delay: 1
+  })
+})
+
 </script>
 
 <template>
   <div class="relative min-h-screen">
+
+    <div>
+      <div 
+        ref="screenWrapperLeft"  
+        class="fixed min-h-screen w-1/2 -translate-x-[100%] top-0 left-0 bg-[#0B1050] z-1000"
+      >
+        <div class="flex justify-end h-screen w-full items-center text-8xl text-white font-semibold">IB</div>
+        
+      </div>
+      <div 
+        ref="screenWrapperRight"  
+        class="fixed min-h-screen w-1/2 translate-x-[100%] top-0 right-0 bg-[#0B1050] z-1000"
+      >
+        <div class="flex justify-start h-screen w-full items-center text-8xl text-white font-semibold">FB</div>
+      </div>
+    </div>
 
     <div class="fixed inset-0 z-0 pointer-events-none">
       <div
