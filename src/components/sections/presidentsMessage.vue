@@ -1,8 +1,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import gsap, { ScrollTrigger, SplitText } from 'gsap/all'
-import Button from '../ui/button.vue'
-import Header from '../ui/header.vue';
+
+import Button from '@/components/ui/button.vue'
+import Header from '@/components/ui/header.vue';
 
 const messageText = ref(null)
 const presidentImageWrapper = ref(null);
@@ -27,15 +28,14 @@ onMounted(() => {
     .from(split.words, {
       filter: "blur(10px)",
       stagger: 0.01,
-      ease: 'power3.out',
-      duration: 0.5,
+      ease: 'power3.in',
+      duration: 0.1,
     })
     .from(presidentImageWrapper.value, {
       width: '0px',
     }, "-=1.4")
     .from(presidentImage.value, {
       filter: "blur(20px)",
-      scale: 0.5, 
     }, "-=1.4")
   
 })  

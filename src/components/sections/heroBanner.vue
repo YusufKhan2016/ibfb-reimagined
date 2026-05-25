@@ -1,7 +1,7 @@
 <script setup>
+import { onMounted, ref } from 'vue';
 import Button from '@/components/ui/button.vue';
 import gsap from 'gsap/all';
-import { onMounted, ref } from 'vue';
 
 const bannerText = ref(null)
 
