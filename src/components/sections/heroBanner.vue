@@ -9,6 +9,7 @@ onMounted(() => {
   gsap.from(bannerText.value, {
     filter: "blur(30px)",
     duration: 0.8,
+    delay: 1,
   })
 })
 

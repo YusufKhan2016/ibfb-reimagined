@@ -8,20 +8,29 @@ const screenWrapperLeft = ref(null);
 const screenWrapperRight = ref(null);
 
 onMounted(() => {
-  gsap.from(screenWrapperLeft.value,
-  {
-    translateX: "-0",
-    duration: 0.8,
-    ease: "power2.in",
-    delay: 1
+
+  document.documentElement.style.overflow = 'hidden'
+  document.body.style.overflow = 'hidden'
+
+  const tl = gsap.timeline({
+    onComplete: () => {
+      document.documentElement.style.overflow = ''
+      document.body.style.overflow = ''
+    }
   })
-  gsap.from(screenWrapperRight.value,
-  {
-    translateX: "0",
-    duration: 0.8,
-    ease: "power2.in",
-    delay: 1
+
+  tl.from(screenWrapperLeft.value, {
+    x: '0%',
+    duration: 1,
+    ease: 'power4.in'
   })
+
+  tl.from(screenWrapperRight.value, {
+    x: '0%',
+    duration: 1,
+    ease: 'power4.in'
+  }, 0)
+
 })
 
 </script>
