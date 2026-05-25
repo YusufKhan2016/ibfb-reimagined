@@ -23,18 +23,19 @@ onMounted(() => {
     }
   });
 
-  tl.from(split.words, {
-    filter: "blur(10px)",
-    stagger: 0.01,
-    ease: 'power3.out',
-    duration: 0.5,
-  })
+  tl
+    .from(split.words, {
+      filter: "blur(10px)",
+      stagger: 0.01,
+      ease: 'power3.out',
+      duration: 0.5,
+    })
     .from(presidentImageWrapper.value, {
       width: '0px',
-      duration: 0.3,
     }, "-=1.4")
     .from(presidentImage.value, {
       filter: "blur(20px)",
+      scale: 0.5, 
     }, "-=1.4")
   
 })  
@@ -56,9 +57,10 @@ onMounted(() => {
         />
 
         <div class="flex justify-between items-center mt-12">
+          
           <div 
             ref="messageText" 
-            class="space-y-6 w-3xl"
+            class="space-y-6 w-3xl bg-white border border-solid border-black/10 p-4"
           >
             <div class="text-lg text-black leading-relaxed">
               
@@ -90,12 +92,8 @@ onMounted(() => {
           </div>
         </div>
 
-
       </div>
       
     </div>
-  </section>
-  <section class="text-4xl">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni, suscipit similique nulla dolores voluptatibus nam id recusandae quaerat error iste autem tempore neque corrupti et quod in qui distinctio! Vel, cumque consectetur quidem tempora, libero voluptatibus, suscipit incidunt autem aspernatur amet nisi sunt. Corporis sed similique rerum ipsa. Ad, nemo voluptate velit consequuntur sunt voluptatum ipsum. Perferendis placeat eveniet accusamus molestiae dolor cum ab deserunt sequi labore optio tempore voluptatem illum aperiam quam laborum impedit dolorem dolores esse maxime commodi natus, perspiciatis, eos sapiente? Neque veniam vero at, itaque aperiam minus, corporis officiis eum, doloribus sint deleniti iure commodi hic necessitatibus quisquam laborum magni ab! Minima perspiciatis sapiente vel quae eligendi qui, suscipit perferendis. Voluptatem quas laudantium earum error, accusantium ipsum eaque animi aspernatur quia necessitatibus provident, voluptates cum nihil autem recusandae! Nemo voluptate amet iusto, eligendi pariatur, accusantium sunt eos autem ea dignissimos voluptas iure dicta eius! Culpa praesentium excepturi quaerat quae soluta incidunt dolore quas, veniam accusamus earum corrupti delectus necessitatibus ipsam laudantium vitae, nobis sit atque fugit repudiandae! Ipsum dignissimos in ullam praesentium, perferendis aliquid maiores omnis sapiente, inventore delectus animi ipsa. Suscipit molestias accusantium reprehenderit quas? Accusamus quasi odio harum cum qui quo nostrum eius, aspernatur culpa in atque. Esse, corrupti molestiae nostrum fugit voluptatibus doloribus fuga. Veritatis placeat quidem architecto a repellat aut vero nobis eum, incidunt provident quo corporis blanditiis illo iusto eveniet obcaecati, excepturi consequatur molestiae odit! Non possimus voluptas blanditiis repellat ex autem dolorum sunt! Iusto illo odio fugiat ullam odit. Voluptatum, illo earum ipsa facere sunt ad rerum modi temporibus nemo repellat iure fugit iste praesentium laudantium amet quibusdam quas? Placeat dolor et eos temporibus corrupti voluptates iure eligendi voluptatem voluptate doloremque asperiores quae voluptas laborum, obcaecati corporis facere iusto consectetur similique alias cupiditate enim ut commodi iste. Tempore, veritatis?
   </section>
 </template>
