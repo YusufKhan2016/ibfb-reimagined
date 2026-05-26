@@ -1,4 +1,5 @@
 <script setup>
+import CurrentNews from '@/components/layout/currentNews.vue';
 import AboutUs from '@/components/sections/aboutUs.vue';
 import BusinessAndMediaInfo from '@/components/sections/businessAndMediaInfo.vue';
 import Events from '@/components/sections/events.vue';

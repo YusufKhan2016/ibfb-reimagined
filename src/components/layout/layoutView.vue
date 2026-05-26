@@ -40,7 +40,7 @@ onMounted(() => {
 <template>
   <div class="relative min-h-screen">
 
-    <!-- <div>
+    <div>
       <div 
         ref="screenWrapperLeft"  
         class="fixed min-h-screen w-1/2 -translate-x-[100%] top-0 left-0 bg-[#0B1050] z-1000"
@@ -54,7 +54,7 @@ onMounted(() => {
       >
         <div class="flex justify-start h-screen w-full items-center text-8xl text-white font-semibold">FB</div>
       </div>
-    </div> -->
+    </div>
 
     <div class="fixed inset-0 z-0 pointer-events-none">
       <div
@@ -67,17 +67,17 @@ onMounted(() => {
 
       <div class="bg-[#0B1050] sticky z-999 top-0 border-b border-b-solid border-white">
         <ul class="flex justify-between container mx-auto px-10 py-1 text-white">
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Home</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">About IBFB</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">What we do</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Membership</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">News & Events</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Resources</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Gallery</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Archive</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Bangladesh</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Career</li>
-          <li class="cursor-pointer hover:text-cyan-100 duration-400 hover:font-semibold">Contact us</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Home</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">About IBFB</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">What we do</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Membership</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">News & Events</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Resources</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Gallery</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Archive</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Bangladesh</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Career</li>
+          <li class="cursor-pointer hover:text-cyan-400 duration-400 hover:font-semibold">Contact us</li>
         </ul>
       </div>
 
