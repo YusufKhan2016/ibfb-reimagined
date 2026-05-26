@@ -1,0 +1,45 @@
+export const footerLinks = {
+  about: [
+    { label: 'Welcome To IBFB', href: '#' },
+    { label: 'Message From The President', href: '#' },
+    { label: 'Guiding Principles', href: '#' },
+    { label: 'Board of Directors', href: '#' },
+    { label: 'Standing Committees & TOR', href: '#' },
+  ],
+  whatWeDo: [
+    { label: 'Business Research', href: '#' },
+    { label: 'Policy Advocacy', href: '#' },
+    { label: 'Training', href: '#' },
+    { label: 'Workshop & Seminars', href: '#' },
+    { label: 'Business Promotion', href: '#' },
+    { label: 'Services To Members', href: '#' },
+  ],
+  newsEvents: [
+    { label: 'Latest News & Events', href: '#' },
+    { label: 'Past News Information', href: '#' },
+    { label: 'IBFB in Print Media', href: '#' },
+    { label: 'IBFB in Electronic Media', href: '#' },
+    { label: 'Upcoming Events', href: '#' },
+    { label: 'Circular', href: '#' },
+  ],
+  membership: [
+    { label: 'Life Members', href: '#' },
+    { label: 'Membership Database', href: '#' },
+    { label: 'Online Membership Form', href: '#' },
+    { label: 'Download Membership Form', href: '#' },
+    { label: 'Request For a Membership Form', href: '#' },
+  ],  
+  resources: [
+    { label: 'IBFB Research & Study Paper', href: '#' },
+    { label: 'Presentations In IBFB Seminar', href: '#' },
+    { label: 'Business Article and Essay', href: '#' },
+    { label: 'Others', href: '#' },
+  ],
+  bangladesh: [
+    { label: 'Bangladesh in Brief', href: '#' },
+    { label: 'Bangladesh – An Overview', href: '#' },
+    { label: 'Sectoral Information & Summary', href: '#' },
+    { label: 'Investment Information', href: '#' },
+    { label: 'Doing Business In Bangladesh', href: '#' },
+  ],
+}

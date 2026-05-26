@@ -3,16 +3,10 @@ import { onMounted, ref } from 'vue'
 import Header from '@/components/ui/header.vue'
 import { galleryImages } from '@/staticDatas/gallery'
 import gsap, { ScrollTrigger } from 'gsap/all'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, EffectCube } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/effect-cube'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const gallerySection = ref(null)
-const galleryWrapper = ref(null)
 const imageCards = ref([])
 
 onMounted(() => {
@@ -29,42 +23,17 @@ onMounted(() => {
         trigger: card,
         start: 'top center+=100',
         end: 'bottom center-=100',
-        scrub: 0.5,
+        scrub: 1,
         markers: false,
       },
       y: () => {
-        return index % 2 === 0 ? 50 : -50
+        return index % 2 === 0 ? 0 : -50
       },
       opacity: 1,
       duration: 0.5,
     })
   })
 
-  imageCards.value.forEach((card) => {
-    gsap.to(card, {
-      scrollTrigger: {
-        trigger: card,
-        start: 'top 80%',
-        end: 'bottom 20%',
-        scrub: 1,
-      },
-      scale: 1,
-    })
-
-    card.addEventListener('mouseenter', () => {
-      gsap.to(card, {
-        scale: 1.01,
-        duration: 0.3,
-      })
-    })
-
-    card.addEventListener('mouseleave', () => {
-      gsap.to(card, {
-        scale: 1,
-        duration: 0.3,
-      })
-    })
-  })
 })
 </script>
 
@@ -72,9 +41,13 @@ onMounted(() => {
   <section class="m-4">
     <div ref="gallerySection" class="relative w-full py-16 px-10 overflow-hidden">
       <div class="relative z-10 container mx-auto">
-        <Header first-part="Gallery" second-part="Showcase" wrapper-class="text-start mb-12" />
+        <Header 
+          first-part="Gallery" 
+          second-part="Showcase" 
+          wrapper-class="mb-12" 
+        />
 
-        <div ref="galleryWrapper" class="columns-1 md:columns-2 lg:columns-3 gap-6 mb-12 space-y-6">
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-6 mb-12 space-y-6">
           <div
             v-for="(image, index) in galleryImages"
             :key="image.id"

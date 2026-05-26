@@ -48,14 +48,14 @@ const modules = [Navigation]
         <div class="flex items-center gap-2 ml-4 whitespace-nowrap">
           <button
             ref="prevNews"
-            class="flex cursor-pointer items-center justify-center p-1.5 text-cyan-200 bg-cyan-950 rounded transition-all duration-300"
+            class="flex cursor-pointer items-center justify-center p-1.5 text-cyan-200 bg-cyan-950 transition-all duration-300"
             aria-label="Previous news"
           >
             <ChevronLeft :size="18" :stroke-width="2.5" />
           </button>
           <button
             ref="nextNews"
-            class="flex cursor-pointer items-center justify-center p-1.5 text-cyan-200 bg-cyan-950 rounded transition-all duration-300"
+            class="flex cursor-pointer items-center justify-center p-1.5 text-cyan-200 bg-cyan-950 transition-all duration-300"
             aria-label="Next news"
           >
             <ChevronRight :size="18" :stroke-width="2.5" />
