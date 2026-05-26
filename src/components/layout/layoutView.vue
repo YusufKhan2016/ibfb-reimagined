@@ -23,14 +23,14 @@ onMounted(() => {
     x: '0%',
     duration: 1,
     ease: 'power4.in',
-    delay: 1.2
+    delay: 1
   })
 
   tl.from(screenWrapperRight.value, {
     x: '0%',
     duration: 1,
     ease: 'power4.in',
-    delay: 1.2
+    delay: 1
   }, 0)
 
 })
@@ -40,7 +40,7 @@ onMounted(() => {
 <template>
   <div class="relative min-h-screen">
 
-    <div>
+    <!-- <div>
       <div 
         ref="screenWrapperLeft"  
         class="fixed min-h-screen w-1/2 -translate-x-[100%] top-0 left-0 bg-[#0B1050] z-1000"
@@ -54,7 +54,7 @@ onMounted(() => {
       >
         <div class="flex justify-start h-screen w-full items-center text-8xl text-white font-semibold">FB</div>
       </div>
-    </div>
+    </div> -->
 
     <div class="fixed inset-0 z-0 pointer-events-none">
       <div

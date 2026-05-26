@@ -8,6 +8,10 @@ defineProps({
     textColor: {
         type: String,
         default: '#fff'
+    },
+    borderColor: {
+        type: String,
+        default: '#0B1050'
     }
 })
 
@@ -15,10 +19,11 @@ defineProps({
 
 <template>
     <button
-    class="group relative overflow-hidden px-5 py-3 font-semibold text-sm hover:shadow-[0_0_28px_rgba(103,232,249,0.35)] transition-all duration-300"
+    class="group relative cursor-pointer overflow-hidden px-5 py-3 font-semibold text-sm hover:shadow-[0_0_28px_rgba(103,232,249,0.35)] transition-all duration-300"
     :style="{
         backgroundColor: bgColor,
-        color: textColor
+        color: textColor,
+        border: `1px solid ${borderColor}`
     }"
     >
         <span class="relative block leading-none overflow-hidden">
