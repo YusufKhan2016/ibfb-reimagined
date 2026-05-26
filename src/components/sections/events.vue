@@ -198,27 +198,6 @@ onMounted(() => {
 
           </div>
         </div>
-
-        <div class="grid grid-cols-3 gap-4 mt-12">
-          <div
-            class="bg-white p-6 border border-[#0B1050]/10 text-center hover:shadow-md transition-shadow"
-          >
-            <div class="text-3xl font-bold text-[#0B1050] mb-2">{{ pastEvents.length }}</div>
-            <div class="text-sm text-gray-600 font-semibold">Past Events</div>
-          </div>
-          <div
-            class="bg-white p-6 border border-[#0B1050]/10 text-center hover:shadow-md transition-shadow"
-          >
-            <div class="text-3xl font-bold text-[#0B1050] mb-2">{{ upcomingEvents.length }}</div>
-            <div class="text-sm text-gray-600 font-semibold">Upcoming Events</div>
-          </div>
-          <div
-            class="bg-white p-6 border border-[#0B1050]/10 text-center hover:shadow-md transition-shadow"
-          >
-            <div class="text-3xl font-bold text-[#0B1050] mb-2">{{ featuredEvents.length }}</div>
-            <div class="text-sm text-gray-600 font-semibold">Featured Events</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
