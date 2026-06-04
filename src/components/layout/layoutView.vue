@@ -50,7 +50,7 @@ onMounted(() => {
       </div>
       <div 
         ref="screenWrapperRight"  
-        class="fixed min-h-screen w-1/2 translate-x-[100%] top-0 right-0 bg-[#0B1050] z-1000"
+        class="fixed min-h-screen w-1/2 translate-x-full top-0 right-0 bg-[#0B1050] z-1000"
       >
         <div class="flex justify-start h-screen w-full items-center text-8xl text-white font-semibold">FB</div>
       </div>
