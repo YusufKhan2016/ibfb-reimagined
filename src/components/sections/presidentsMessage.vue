@@ -15,28 +15,21 @@ gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
 
-  let split = SplitText.create(messageText.value, { type: "words" });
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: sectionWrapper.value,
         start: 'top 70%',
-        toggleActions: 'play pause resume reset'
+        toggleActions: 'play none none none'
     }
   });
 
   tl
-    .from(split.words, {
-      filter: "blur(10px)",
-      stagger: 0.01,
-      ease: 'power3.in',
-      duration: 0.1,
-    })
     .from(presidentImageWrapper.value, {
       width: '0px',
-    }, "-=1.4")
+    })
     .from(presidentImage.value, {
       filter: "blur(20px)",
-    }, "-=1.4")
+    }, "-=0.4")
   
 })  
 

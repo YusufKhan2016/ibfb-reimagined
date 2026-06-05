@@ -3,13 +3,13 @@ import { currentNews } from '@/staticDatas/news'
 import { Zap, ChevronLeft, ChevronRight } from '@lucide/vue'
 import { ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation } from 'swiper/modules'
+import { Navigation, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
 const prevNews = ref(null)
 const nextNews = ref(null)
-const modules = [Navigation]
+const modules = [Navigation, Autoplay]
 </script>
 
 <template>
@@ -32,9 +32,13 @@ const modules = [Navigation]
             prevEl: prevNews,
             nextEl: nextNews,
           }"
+          :autoplay="{
+            delay: 2000,
+            disableOnInteraction: false
+          }"
         >
           <SwiperSlide v-for="news in currentNews" :key="news.id">
-            <div class="transition-all duration-500 ease-in-out">
+            <div >
               <p class="text-white font-semibold truncate">
                 {{ news.title }}
               </p>

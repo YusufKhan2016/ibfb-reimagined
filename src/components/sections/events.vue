@@ -1,7 +1,6 @@
 <script setup>
 import Header from '@/components/ui/header.vue'
 import { ArrowBigRight, Calendar, ChevronLeft, ChevronRight, MapPin } from '@lucide/vue'
-import gsap, { ScrollTrigger, SplitText } from 'gsap/all'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import { computed, onMounted, ref } from 'vue'
@@ -9,9 +8,6 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import { featuredEvents, pastEvents, upcomingEvents } from '@/staticDatas/events'
 import Button from '../ui/button.vue'
-
-gsap.registerPlugin(SplitText)
-gsap.registerPlugin(ScrollTrigger)
 
 const sectionWrapper = ref(null)
 const activeTab = ref('upcoming')
@@ -45,21 +41,6 @@ const goToSlide = (index) => {
   swiperInstance.value?.slideTo(index)
 }
 
-onMounted(() => {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: sectionWrapper.value,
-      start: 'top 70%',
-      toggleActions: 'play pause resume reset',
-    },
-  })
-
-  tl.from(sectionWrapper.value, {
-    filter: 'blur(10px)',
-    ease: 'power3.in',
-    duration: 0.3,
-  })
-})
 </script>
 
 <template>

@@ -9,31 +9,31 @@ const mediaTextWrapper = ref(null)
 const businessTextWrapper = ref(null)
 const sectionWrapper = ref(null)
 
-gsap.registerPlugin(SplitText) 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(SplitText) 
+// gsap.registerPlugin(ScrollTrigger)
 
-onMounted(() => {
+// onMounted(() => {
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: sectionWrapper.value,
-      start: 'top 70%',
-      toggleActions: 'play pause resume reset'
-    }
-  });
+//   const tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: sectionWrapper.value,
+//       start: 'top 70%',
+//       toggleActions: 'play pause resume reset'
+//     }
+//   });
 
-  tl.from(mediaTextWrapper.value, {
-    filter: "blur(10px)",
-    ease: 'power3.in',
-    duration: 0.3,
-  })
-    .from(businessTextWrapper.value, {
-      filter: "blur(10px)",
-      ease: 'power3.in',
-      duration: 0.3,
-  },"-=0.2")
+//   tl.from(mediaTextWrapper.value, {
+//     filter: "blur(10px)",
+//     ease: 'power3.in',
+//     duration: 0.3,
+//   })
+//     .from(businessTextWrapper.value, {
+//       filter: "blur(10px)",
+//       ease: 'power3.in',
+//       duration: 0.3,
+//   },"-=0.2")
 
-})
+// })
 
 </script>
 

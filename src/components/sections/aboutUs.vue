@@ -7,28 +7,28 @@ import Header from '../ui/header.vue';
 const aboutSection = ref(null)
 const aboutText = ref(null);
 
-gsap.registerPlugin(SplitText) 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(SplitText) 
+// gsap.registerPlugin(ScrollTrigger)
 
-onMounted(() => {
+// onMounted(() => {
 
-  let split = SplitText.create(aboutText.value, { type: "words" });
+//   let split = SplitText.create(aboutText.value, { type: "words" });
   
-  const textAnimation = gsap.from(split.words, {
-    opacity: 0.2,
-    filter: "blur(1px)",
-    ease: "power2.out",
-    stagger: 0.2
-  })
+//   const textAnimation = gsap.from(split.words, {
+//     opacity: 0.2,
+//     filter: "blur(1px)",
+//     ease: "power2.out",
+//     stagger: 0.2
+//   })
 
-  ScrollTrigger.create({
-    trigger: aboutSection.value,
-    animation: textAnimation,
-    pin: true,
-    scrub: true,
-    start: "top 10%",
-  })
-})
+//   ScrollTrigger.create({
+//     trigger: aboutSection.value,
+//     animation: textAnimation,
+//     pin: true,
+//     scrub: true,
+//     start: "top 10%",
+//   })
+// })
 
 </script>
 

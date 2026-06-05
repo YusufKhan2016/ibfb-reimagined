@@ -39,7 +39,7 @@ onMounted(() => {
   ScrollTrigger.create({
     trigger: headingText.value,
     animation: headingTextAnimation,
-    start: 'top 85%',
+    start: 'top 90%',
     end: 'top 60%',
     scrub: true
   })
